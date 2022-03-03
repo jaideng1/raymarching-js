@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Raycasting</title>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #canvas-block {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            border-radius: 20px;
+            background-color: #f2f2f2;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #content {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        button {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #e6e6e6;
+        }
+
+        button:active {
+            background-color: #d9d9d9;
+        }
+    </style>
+    <body>
+        <div id="canvas-block">
+            <canvas id="first-person" width="540px" height="540px" style="width: 540px; height: 540px"></canvas>
+        </div>
+        <div id="content">
+            <button onclick="addPillar()">Add Pillar</button>
+            <br/><br/>
+            <h1>About this</h1>
+            <p>
+                This project is to show an example of raymarching and showing how it can be used in a 3D context. 
+                Project inspired by a friend's project.
+                <br/>
+                <br/>
+                W,A,S,D to move, mouse is to look.<br/>
+                <br/> If it doesn't seem to work, open the console and type "player.keys" and hit enter, then close the console. It doesn't work sometimes and I'm not too sure why.
+                <br/>
+                You can also move the pillars by clicking on them.
+                <br/><br/>
+                Made by <a href="https://github.com/jaideng1" target="_blank">jaideng1</a>.
+                <br/><br/><br/><br/>
+            </p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
